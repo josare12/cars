@@ -15,9 +15,9 @@ do
 		"1") echo "What is the year?";read year
 		echo "what is the make?"; read make
 		echo "what is the model?"; read model
-		echo  $year:$make:$model >> My_old_cars.txt;;
+		echo  "$year":"$make":"$model" >> My_old_cars.txt;;
 		"2") sort My_old_cars.txt ;;	
-		"3") echo "Thanks for playing!"
+		"3") echo "Goodbye, Thanks for playing!"
 			quit=1
 			rm My_old_cars.txt
 
